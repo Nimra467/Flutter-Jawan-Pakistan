@@ -18,7 +18,7 @@ class _CalculatorState extends State<CalculatorApp> {
       num1 = 0.0;
       num2 = 0.0;
       operand = "";
-    } else if (buttonText == "⌫") {
+    } else if (buttonText == "x") {
       _output =
           _output.length > 1 ? _output.substring(0, _output.length - 1) : "0";
     } else if (buttonText == "÷" ||

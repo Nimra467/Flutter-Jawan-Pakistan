@@ -10,7 +10,7 @@ class LoginScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(Icons.health_and_safety_sharp, size: 100, color: Colors.blue),
+            Text('Login to Your Account', style: TextStyle(fontSize: 24)),
             SizedBox(height: 20),
             TextField(
               decoration: InputDecoration(
@@ -20,54 +20,31 @@ class LoginScreen extends StatelessWidget {
             ),
             SizedBox(height: 10),
             TextField(
-              obscureText: true,
               decoration: InputDecoration(
                 labelText: 'Password',
                 prefixIcon: Icon(Icons.lock),
               ),
+              obscureText: true,
             ),
             SizedBox(height: 10),
             Row(
+              mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                Checkbox(value: true, onChanged: (bool? value) {}),
-                Text('Remember me'),
+                Text('Forgot the password?'),
               ],
             ),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) => HomeScreen()));
+                    MaterialPageRoute(builder: (context) {
+                  return HomeScreen();
+                }));
               },
-              child: Text('Sign In'),
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text('Forgot the password?'),
-            ),
-            SizedBox(height: 20),
-            Text('or continue with'),
-            SizedBox(height: 10),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                IconButton(
-                  icon: Icon(Icons.facebook_rounded),
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.facebook_rounded),
-                  onPressed: () {},
-                ),
-                IconButton(
-                  icon: Icon(Icons.apple_rounded),
-                  onPressed: () {},
-                ),
-              ],
-            ),
-            TextButton(
-              onPressed: () {},
-              child: Text('Don\'t have an account? Sign up'),
+              child: Text('Sign in'),
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue, // Background color
+              ),
             ),
           ],
         ),

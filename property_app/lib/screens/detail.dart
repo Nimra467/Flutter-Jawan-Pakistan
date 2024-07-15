@@ -1,22 +1,6 @@
 import 'package:flutter/material.dart';
 
 class PropertyDetailScreen extends StatelessWidget {
-  final String imageUrl;
-  final String title;
-  final String address;
-  final int beds;
-  final int baths;
-  final int garage;
-
-  PropertyDetailScreen({
-    required this.imageUrl,
-    required this.title,
-    required this.address,
-    required this.beds,
-    required this.baths,
-    required this.garage,
-  });
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,44 +12,30 @@ class PropertyDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.network(imageUrl),
+            Image.network(
+                'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
             SizedBox(height: 10),
-            Text(title,
+            Text('Craftsman House',
                 style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
             SizedBox(height: 5),
-            Text(address, style: TextStyle(color: Colors.grey)),
+            Text('520 N Beaudry Ave, Los Angeles',
+                style: TextStyle(color: Colors.grey)),
             SizedBox(height: 10),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                Row(
-                  children: [
-                    Icon(Icons.bed),
-                    SizedBox(width: 5),
-                    Text('$beds Beds'),
-                  ],
-                ),
-                Row(
-                  children: [
-                    Icon(Icons.bathtub),
-                    SizedBox(width: 5),
-                    Text('$baths Baths'),
-                  ],
-                ),
-                Row(
-                  children: [
-                    Icon(Icons.garage),
-                    SizedBox(width: 5),
-                    Text('$garage Garage'),
-                  ],
-                ),
+                Icon(Icons.bed),
+                Text('4 Beds'),
+                Icon(Icons.bathtub),
+                Text('4 Baths'),
+                Icon(Icons.garage),
+                Text('1 Garage'),
               ],
             ),
             SizedBox(height: 20),
             Text(
-              'Completely redone in 2021. 4 bedrooms. 2 bathrooms. 1 garage, amazing curb appeal and entertain area. Water views. Tons of built-ins & extras.',
-              style: TextStyle(fontSize: 16),
-            ),
+                'Completely redone in 2021. 4 bedrooms. 2 bathrooms. 1 garage, amazing curb appeal and entertain area. Water views. Tons of built-ins & extras.',
+                style: TextStyle(fontSize: 16)),
             SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {},
