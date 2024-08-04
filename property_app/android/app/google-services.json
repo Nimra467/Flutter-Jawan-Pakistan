@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1086957248684",
+    "project_id": "propertybuyers-b927d",
+    "storage_bucket": "propertybuyers-b927d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086957248684:android:e318c0998b58c82feebf09",
+        "android_client_info": {
+          "package_name": "com.example.day1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj_Sds4aENjskMeS753SPxofnDNGXSFKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1086957248684:android:f3670c5c48f0e75ceebf09",
+        "android_client_info": {
+          "package_name": "com.example.property_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj_Sds4aENjskMeS753SPxofnDNGXSFKE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

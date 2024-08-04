@@ -22,7 +22,31 @@ class MyProfile extends StatelessWidget {
             children: [
               Icon(Icons.book),
               Text("Edit Profile"),
-              IconButton(onPressed: () {}, icon: Icon(Icons.arrow_circle_right))
+              IconButton(onPressed: () {}, icon: Icon(Icons.arrow_right))
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Icon(Icons.category_rounded),
+              Text("My Orders"),
+              IconButton(onPressed: () {}, icon: Icon(Icons.arrow_right))
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Icon(Icons.book_online_rounded),
+              Text("Billing"),
+              IconButton(onPressed: () {}, icon: Icon(Icons.arrow_right))
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: [
+              Icon(Icons.question_mark_rounded),
+              Text("Faq"),
+              IconButton(onPressed: () {}, icon: Icon(Icons.arrow_right))
             ],
           ),
         ],

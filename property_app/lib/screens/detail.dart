@@ -9,14 +9,21 @@ class PropertyDetailScreen extends StatelessWidget {
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+        child: ListView(
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Image.network(
                 'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'),
             SizedBox(height: 10),
-            Text('Craftsman House',
-                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text('Craftsman House',
+                    style:
+                        TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
+                IconButton(onPressed: () {}, icon: Icon(Icons.bookmark))
+              ],
+            ),
             SizedBox(height: 5),
             Text('520 N Beaudry Ave, Los Angeles',
                 style: TextStyle(color: Colors.grey)),
